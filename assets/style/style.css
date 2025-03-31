@@ -1,0 +1,234 @@
+/* Reset e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #23272A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #404EED;
+    background-image: url('/assets/imagens/header.png');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 24px;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 16px 32px;
+    border-radius: 28px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.download-button {
+    background-color: white;
+    color: #23272A;
+}
+
+.download-button:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.browser-button {
+    background-color: #23272A;
+    color: white;
+}
+
+.browser-button:hover {
+    background-color: #2c2f33;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Features Section */
+.features-grid {
+    padding: 120px 24px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.feature.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature h2 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.feature p {
+    font-size: 20px;
+    line-height: 1.625;
+}
+
+.feature-image {
+    flex: 1;
+}
+
+.feature-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Technology Section */
+.technology {
+    background-color: #F6F6F6;
+    padding: 120px 24px;
+    text-align: center;
+}
+
+.technology h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.technology p {
+    font-size: 20px;
+    max-width: 980px;
+    margin: 0 auto 40px;
+}
+
+.tech-image {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.tech-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #23272A;
+    padding: 80px 24px;
+    text-align: center;
+    color: white;
+}
+
+.footer h3 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.footer .download-button {
+    background-color: #5865F2;
+    color: white;
+}
+
+.footer .download-button:hover {
+    background-color: #4752C4;
+}
+
+@media only screen and (max-width: 428px) {
+    /* Hero Section */
+    .hero {
+        padding: 60px 16px !important;
+    }
+    .hero h1 {
+        font-size: 32px !important;
+    }
+    .hero p {
+        font-size: 16px !important;
+    }
+    .hero-buttons {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+    .hero-buttons button {
+        width: 100% !important;
+    }
+
+    /* Features Section - FORÇA COLUNA ÚNICA */
+    .features-grid {
+        padding: 40px 16px !important;
+    }
+    .feature, .feature.reverse {
+        flex-direction: column !important; /* Imagem acima, texto abaixo */
+        gap: 20px !important;
+    }
+    .feature-content {
+        text-align: center !important;
+        padding: 0 !important;
+    }
+    .feature h2 {
+        font-size: 24px !important;
+    }
+    .feature p {
+        font-size: 16px !important;
+    }
+
+    /* Technology Section */
+    .technology {
+        padding: 60px 16px !important;
+    }
+    .technology h2 {
+        font-size: 24px !important;
+    }
+    .technology p {
+        font-size: 16px !important;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 60px 16px !important;
+    }
+    .footer h3 {
+        font-size: 24px !important;
+    }
+}
