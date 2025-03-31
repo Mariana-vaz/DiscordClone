@@ -1,4 +1,4 @@
-/* Reset e estilos globais */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     flex-direction: column;
 }
 
-/* Hero Section */
+
 .hero {
     background-color: #404EED;
     background-image: url('/assets/imagens/header.png');
@@ -79,7 +79,7 @@ button {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Features Section */
+
 .features-grid {
     padding: 120px 24px;
 }
@@ -123,7 +123,7 @@ button {
     height: auto;
 }
 
-/* Technology Section */
+
 .technology {
     background-color: #F6F6F6;
     padding: 120px 24px;
@@ -152,7 +152,7 @@ button {
     height: auto;
 }
 
-/* Footer */
+
 .footer {
     background-color: #23272A;
     padding: 80px 24px;
@@ -176,7 +176,7 @@ button {
 }
 
 @media only screen and (max-width: 428px) {
-    /* Hero Section */
+    
     .hero {
         padding: 60px 16px !important;
     }
@@ -194,12 +194,12 @@ button {
         width: 100% !important;
     }
 
-    /* Features Section - FORÇA COLUNA ÚNICA */
+    
     .features-grid {
         padding: 40px 16px !important;
     }
     .feature, .feature.reverse {
-        flex-direction: column !important; /* Imagem acima, texto abaixo */
+        flex-direction: column !important; 
         gap: 20px !important;
     }
     .feature-content {
@@ -213,7 +213,7 @@ button {
         font-size: 16px !important;
     }
 
-    /* Technology Section */
+    
     .technology {
         padding: 60px 16px !important;
     }
@@ -224,7 +224,7 @@ button {
         font-size: 16px !important;
     }
 
-    /* Footer */
+    
     .footer {
         padding: 60px 16px !important;
     }
